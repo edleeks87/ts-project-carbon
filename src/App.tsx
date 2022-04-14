@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CarbonProvider from "carbon-react/lib/components/carbon-provider";
+import MultiActionButton from "carbon-react/lib/components/multi-action-button";
+import Button from "carbon-react/lib/components/button";
+import GlobalStyle from "carbon-react/lib/style/global-style";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <GlobalStyle />
+      <CarbonProvider>
+        Add the component you want to test here:
+        <br />
+
+        <MultiActionButton text="main">
+          <Button>Child 1</Button>
+        </MultiActionButton>
+      </CarbonProvider>
+      </div>
   );
 }
 
