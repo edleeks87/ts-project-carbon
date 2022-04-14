@@ -15,7 +15,7 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4",
-    "carbon-react": "latest",
+    "carbon-react": "https://pkg.csb.dev/Sage/carbon/commit/85b96c58/carbon-react",
     "@sage/design-tokens": "^2.3.0",
     "draft-js": "^0.11.5",
     "styled-components": "^4.4.1"
